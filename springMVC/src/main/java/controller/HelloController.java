@@ -6,6 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.nio.charset.Charset;
 
 @Controller
 public class HelloController {
@@ -13,7 +14,7 @@ public class HelloController {
     @RequestMapping("/")
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView("hello");
-        modelAndView.addObject("message","使用注解方式跳转");
+        modelAndView.addObject("message","aljfkadye ");
         return modelAndView;
     }
 }
