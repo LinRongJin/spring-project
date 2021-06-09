@@ -4,19 +4,14 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-    <!--settings：控制mybatis全局行为-->
-<!--    <settings>-->
-<!--        &lt;!&ndash;设置mybatis输出日志&ndash;&gt;-->
-<!--        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
-<!--    </settings>-->
     <!--设置别名-->
     <typeAliases>
         <!--name:实体类所在的包名-->
         <package name="entity"/>
     </typeAliases>
-    <environments default="springmvc">
-        <environment id="springmvc">
-            <transactionManager type="JDBC"></transactionManager>
+    <environments default="springmvc-mybatis">
+        <environment id="springmvc-mybatis">
+            <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/web?charaterEncoding=UTF-8"/>
@@ -30,7 +25,6 @@
         <!--
           name：是包名， 这个包中的所有mapper.xml一次都能加载
         -->
-        <mapper resource="mapper/User.xml"/>
-        <mapper class="mapper.UserMapper"/>
+        <package name="mapper"/>
     </mappers>
 </configuration>

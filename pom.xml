@@ -11,6 +11,8 @@
     <modules>
         <module>springMVC</module>
         <module>Mybatis</module>
+        <module>Internet</module>
+        <module>springMVC-mybatis</module>
     </modules>
 
     <dependencies>
@@ -20,11 +22,7 @@
             <version>1.18.20</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.7</version>
-        </dependency>
+
     </dependencies>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
