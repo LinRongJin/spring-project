@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="autoTest" />
         <module name="mybatis_practice" />
         <module name="mybatis" />
         <module name="springMVC-mybatis" />

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 @Component
 public class UserService implements UserMapper {
@@ -17,5 +18,25 @@ public class UserService implements UserMapper {
     @Override
     public List<User> allUser() {
         return userMapper.allUser();
+    }
+
+    @Override
+    public User oneUser(String username) {
+        return userMapper.oneUser(username);
+    }
+
+    @Override
+    public void deleteUser(String user) {
+
+    }
+
+    @Override
+    public void addUser(User user) {
+
+    }
+
+    @Override
+    public void updateUser(User user) {
+
     }
 }

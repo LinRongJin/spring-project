@@ -6,7 +6,15 @@
 </head>
 <body>
 <h1>jkfajkdjf</h1>
-<span th:each="user:${userList}" th:text="${userList}"/>
+
+
+<form action="/getOne" method="post">
+    <span th:each="user:${userList}" th:text="${userList}"></span>
+    username:<input name="username" type="text" />
+    <input type="submit" value="submit"/>
+    <h1 th:text="${no}">null</h1>
+</form>
+
 <br/>
 </body>
 </html>
